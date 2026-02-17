@@ -88,7 +88,7 @@ graph TD
     subgraph K8s Cluster
         NodePort --> Service[PropIntel Service]
         Service -->|Load Balance| Pod1[Pod: PropIntel Apps]
-        Service -->|Load Balance| Pod2[Pod: PropIntel Apps (Replica)]
+        Service -->|Load Balance| Pod2["Pod: PropIntel Apps (Replica)"]
         
         Pod1 -->|Env: OLLAMA_HOST| External[External Ollama Service]
     end
