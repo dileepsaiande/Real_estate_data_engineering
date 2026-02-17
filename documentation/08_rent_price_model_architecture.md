@@ -22,7 +22,7 @@ graph LR
     
     LinearReg -->|Raw Rent| PostProc[Post-Processing]
     PostProc -->|Normalize| Norm[Range Normalization]
-    Norm -->|Final Rent| Output[Monthly Rent (₹)]
+    Norm -->|Final Rent| Output["Monthly Rent (₹)"]
 ```
 
 ### 2.2 Algorithm Selection
