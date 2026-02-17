@@ -16,10 +16,10 @@ graph TD
     
     subgraph "Spark Execution Engine"
         SparkSession -->|Driver| Driver[Driver Program]
-        Driver -->|Task| Executor[Executor 1 (Local)]
+        Driver -->|Task| Executor["Executor 1 (Local)"]
         
         Executor -->|Read| HadoopFS[Hadoop FileSystem API]
-        HadoopFS -->|I/O| LocalFS[Local File System / HDFS]
+        HadoopFS -->|I/O| LocalFS["Local File System / HDFS"]
     end
     
     subgraph "Libraries"
