@@ -32,7 +32,7 @@ graph TD
         Data[Data Layer]
     end
     
-    PropIntel -->|Inference| Ollama[AI Service (DeepSeek)]
+    PropIntel -->|Inference| Ollama["AI Service (DeepSeek)"]
     PropIntel -->|Compute| Spark[Apache Spark]
 ```
 
